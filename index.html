@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ma famille — Présentation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Barre de progression -->
+  <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+
+  <!-- Contrôles haut -->
+  <div class="topbar">
+    <div class="brand">Ma famille</div>
+    <div class="topbar-actions">
+      <div class="lang-switch" id="langSwitch" title="Changer la langue des mots-clés">
+        <button class="lang-btn active" data-lang="fr">FR</button>
+        <button class="lang-btn" data-lang="es">ES</button>
+      </div>
+      <button class="icon-btn" id="fullscreenBtn" title="Plein écran">⛶</button>
+    </div>
+  </div>
+
+  <!-- Conteneur des diapositives -->
+  <main id="deck" class="deck"></main>
+
+  <!-- Navigation bas -->
+  <div class="navbar">
+    <button class="nav-btn" id="prevBtn" aria-label="Précédent">‹</button>
+    <div class="dots" id="dots"></div>
+    <button class="nav-btn" id="nextBtn" aria-label="Suivant">›</button>
+  </div>
+
+  <div class="hint" id="hint">Utilise ← → ou clique. Clique sur les cartes pour les retourner.</div>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
