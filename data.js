@@ -40,7 +40,7 @@ const FAMILY = [
     id: "novia",
     role: { fr: "Ma petite amie", es: "Mi novia" },
     name: "Valentina Rodríguez",
-    emoji: "👩🏽",
+    emoji: "👩🏻",
     accent: "#8b5cf6",
     flag: "🇨🇴",
     cards: [
